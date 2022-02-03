@@ -21,13 +21,13 @@ inc_arr = ["W3_R7C/sample1_W3_R7C", "W7N_R15C/sample2_W7N_R15C", "W7N_R15C/sampl
 for sample = [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 17, 18, 22]
     
     % Import REFERENCE signal.
-    [ref, fs_ref] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/CloudDEI/", ref_arr(sample), "_REFERENCE.wav"));
+    [ref, fs_ref] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/CloudDEI/", ref_arr(sample), "_REFERENCE.wav"));
     % Import INCORRECT signal.
-    [inc, fs_inc] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_INCORRECT.wav"));
+    [inc, fs_inc] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_INCORRECT.wav"));
     % Import Web Audio API signal (with convolution).
-    [api, fs_api] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_API.wav"));
+    [api, fs_api] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_API.wav"));
     % Import MATLAB signal.
-    [mat, fs_mat] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_MATLAB.wav"));
+    [mat, fs_mat] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_MATLAB.wav"));
 
     % To compare the PSDs we have to consider the speed change.
     fs_ratio = fs_inc/fs_ref;

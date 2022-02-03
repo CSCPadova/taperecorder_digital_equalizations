@@ -26,11 +26,11 @@ for sample = [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 17, 18, 22]
     disp("Sample " + sample)
     
     % Import REFERENCE signal.
-    [ref, fs_ref] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/CloudDEI/", ref_arr(sample), "_REFERENCE.wav"));
+    [ref, fs_ref] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/CloudDEI/", ref_arr(sample), "_REFERENCE.wav"));
     % Import INCORRECT signal.
-    [inc, fs_inc] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_INCORRECT.wav"));
+    [inc, fs_inc] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_INCORRECT.wav"));
     % Import Web Audio API repaired signal (with convolution).
-    [api, fs_api] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_API.wav"));
+    [api, fs_api] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/CloudDEI/", inc_arr(sample), "_API.wav"));
     % Import Web Audio API repaired signal (with IIRFilterNode).
     [iir, fs_iir] = audioread(strcat("Audio/", iir_arr(sample), "_INCORRECT_NAB_CCIR_Correction.wav"));
 

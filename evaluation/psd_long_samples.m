@@ -25,11 +25,11 @@ for sample = 1 : length(ref_arr)
     c = fix(clock);
     disp(c(4) + ":" + c(5) + ":" + c(6) + " - Reading files...");
     % Import REFERENCE signal.
-    [ref, fs_ref] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/MULTIPLE SPEED + EQ TEST/", ref_arr(sample), ".wav"));
+    [ref, fs_ref] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/MULTIPLE SPEED + EQ TEST/", ref_arr(sample), ".wav"));
     % Import INCORRECT signal.
-    [inc, fs_inc] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/MULTIPLE SPEED + EQ TEST/", inc_arr(sample), "_.wav"));
+    [inc, fs_inc] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/MULTIPLE SPEED + EQ TEST/", inc_arr(sample), "_.wav"));
     % Import MATLAB signal.
-    [mat, fs_mat] = audioread(strcat("/Users/csc1csc2/Documents/Pubblicazione Tesi/digital_equalizations/Audio/Output/", mat_arr(sample), "_newTimeConstants.wav")); % MODIFICA: aggiunto _newTimeConstants
+    [mat, fs_mat] = audioread(strcat("/Users/nadir/Documents/Pubblicazione Tesi/digital_equalizations/Audio/Output/", mat_arr(sample), "_newTimeConstants.wav")); % MODIFICA: aggiunto _newTimeConstants
     
     % To compare the PSDs...
     fs_ratio = fs_mat/fs_ref;
