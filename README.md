@@ -1,4 +1,4 @@
-# Tape Recorder Digital Equalisation
+# Tape Recorder Digital Equalisations
 
 This repository contains the code of a correction workflow and digital filters for restoring open-reel tape recordings digitised with incorrect speeds and equalisation standards. This tool can save (at least partially) the original content and can be used to create access copies listenable by users. The speed and equalisation standards considered in this work are the ones provided by a tape recorder Studer A810.
 
